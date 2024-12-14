@@ -1,10 +1,12 @@
-using UnityEngine;
+Susing UnityEngine;
 
 public class CubeController : MonoBehaviour
 {
     public int height = 4;            
     public int width = 3;                
-    public float rotationSpeed = 60f;        public Color cubeColor = Color.green;      public Vector2 initialPosition = new Vector2(0, 1, 0); 
+    public float rotationSpeed = 60f;        
+public Color cubeColor = Color.green;     
+public Vector2 initialPosition = new Vector2(0, 1, 0); 
 
     // Start is called before the first frame update
     void Start()
