@@ -1,4 +1,4 @@
-Susing UnityEngine;
+using UnityEngine;
 
 public class CubeController : MonoBehaviour
 {
