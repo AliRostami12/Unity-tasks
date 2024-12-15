@@ -1,0 +1,28 @@
+public class CubeController : MonoBehaviour
+{
+ public int height = 3;            
+public int width = 3;                
+public float rotationSpeed = 60f;  
+
+public Color cubeColor = Color.green;
+
+public Vector3 initialPosition = new Vector3(0, 1, 0); 
+
+     
+    void Start()
+    {
+        
+        GetComponent<Renderer>().material.color = cubeColor;
+        transform.position = initialPosition;
+        
+          
+        transform.localScale = new Vector3(width, height, width);
+    }
+
+    
+    void Update()
+    {
+        
+        transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
+    }
+}
